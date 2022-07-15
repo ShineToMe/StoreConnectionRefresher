@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AppCenterAuthenticator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="RedirectAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://appcenter.ms/auth/intune/callback</Value>
+    </Setting>
+    <Setting Name="ClientID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">$yourValue$</Value>
+    </Setting>
+    <Setting Name="AuthAddressPrefix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://login.microsoftonline.com/common/oauth2/authorize?redirect_uri=https%3A%2F%2Fappcenter.ms%2Fauth%2Fintune%2Fcallback&amp;response_type=code&amp;response_mode=query&amp;client_id=</Value>
+    </Setting>
+    <Setting Name="AuthAddressSuffix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">&amp;resource=https%3A%2F%2Fgraph.microsoft.com&amp;scope=email%20profile%20openid&amp;x-client-SKU=passport-azure-ad&amp;x-client-Ver=4.0.0&amp;sso_reload=true&amp;nonce=abc</Value>
+    </Setting>
+    <Setting Name="BrowserPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">FixedRuntime</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
