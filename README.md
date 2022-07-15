@@ -45,7 +45,7 @@ Please, be aware, that after that you will have new DestinationID of the store (
 
 ## DevOps hints
 You can automatically update destination store IDs in DevOps release definitions, by using DevOps.psm1 functions combined with approach from Example.ps1.  
-```shell
+```powershell
 DevOps.Initialize -userToken $DevOpsToken -org $DevOpsOrganization -project $DevOpsProject
 $releases = DevOps.DefinitionList
 foreach ($def in $releases.Data)
