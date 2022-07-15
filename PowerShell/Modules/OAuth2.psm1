@@ -5,7 +5,6 @@ $OAData = [ordered]@{
     ClientSecret = $null
     TenantID     = $null
     RedirectURI  = $null
-    AuthURL      = $null
     TokenData    = $null
 }
 
@@ -26,17 +25,13 @@ function OAuth.Initialize
         [string]$tenantID,
         [Parameter(HelpMessage='Redirect URI')]
         [ValidateNotNull()]
-        [string]$redirectURI,
-        [Parameter(HelpMessage='Authentication URL')]
-        [ValidateNotNull()]
-        [string]$authURL
+        [string]$redirectURI
     )
 
     $OAData.ClientID     = $clientID
     $OAData.ClientSecret = $clientSecret
     $OAData.TenantID     = $tenantID
     $OAData.RedirectURI  = $redirectURI
-    $OAData.AuthURL      = $authURL
 }
 
 function OAuth.TokenGet
