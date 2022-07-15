@@ -45,6 +45,7 @@ Please, be aware, that after that you will have new DestinationID of the store (
 
 ## DevOps hints
 You can automatically update destination store IDs in DevOps release definitions, by using DevOps.psm1 functions combined with approach from Example.ps1.  
+This will automatically get all tasks for publishing to AppCenter Intune Store and updates destination store IDs inside, without need of manually passing AppCenter Organization and Applications.  
 ```powershell
 DevOps.Initialize -userToken $DevOpsToken -org $DevOpsOrganization -project $DevOpsProject
 $releases = DevOps.DefinitionList
